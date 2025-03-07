@@ -63,8 +63,8 @@ function getRandomTopic() {
 async function generateTweet() {
     const topic = getRandomTopic();
     const requestData = {
-        model: "llama3.2:latest", 
-        prompt: `Write an engaging and authentic tweet about: ${topic}. reply the tweet only without any hashtags`,
+        model: "llama3.2:latest",
+        prompt: `Generate a casual tweet about ${topic} as if written by a real person who's just sharing their thoughts. Don't follow any specific format, structure, or rules - just make it sound like something someone would actually post online in the moment. Avoid anything that sounds like marketing, advice, or AI-generated content. Keep it under 280 characters. and dont write hastags at all`,
         stream: false,
         // format: {
         //     type: "object",
